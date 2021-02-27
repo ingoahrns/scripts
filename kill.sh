@@ -15,12 +15,15 @@ slayprocess () {
 }
 
 # Kill ROS2 Nodes
+killprocess ds4drv
 killprocess arduino		
 killprocess raspicam	
 killprocess joystick	
 killprocess joyctrl	
-killprocess rplidar_node	
+killprocess rplidarNode
 killprocess balldetect	
+killprocess robotcontrol	
+killprocess navigation	
 
 
 

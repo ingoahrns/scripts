@@ -7,8 +7,12 @@ killprocess () {
     fi
 }
 
-cd /home/pi/ros2_ws
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+source /opt/ros/foxy/setup.bash
+source /home/pi/robot/install/local_setup.sh
+
+cd /home/pi/robot
 
 killprocess raspicam
 
-ros2 run raspicam raspicam __params:=/home/pi/ros2_ws/src/CameraNode/raspicam/raspicam.yaml
+ros2 run raspicam raspicam --ros-args --params-file /home/pi/robot/projects/CameraNode/raspicam/raspicam.yaml

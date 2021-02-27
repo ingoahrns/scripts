@@ -7,8 +7,12 @@ killprocess () {
     fi
 }
 
-cd /home/pi/ros2_ws
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+source /opt/ros/foxy/setup.bash
+source /home/pi/robot/install/local_setup.sh
+
+cd /home/pi/robot
 
 killprocess joyctrl
 
-ros2 run joyctrl joyctrl __params:=/home/pi/ros2_ws/src/JoyControlNode/joyctrl/joyctrl.yaml
+ros2 run joyctrl joyctrl --ros-args --params-file /home/pi/robot/projects/JoyCtrlNode/joyctrl/joyctrl.yaml

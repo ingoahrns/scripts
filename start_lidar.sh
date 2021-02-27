@@ -7,8 +7,12 @@ killprocess () {
     fi
 }
 
-cd /home/pi/ros2_ws
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+source /opt/ros/foxy/setup.bash
+source /home/pi/robot/install/local_setup.sh
 
-killprocess rplidar_node
+cd /home/pi/robot
 
-ros2 run rplidar_ros rplidar_node
+killprocess rplidarNode
+
+ros2 run rplidar_ros rplidarNode

@@ -13,8 +13,7 @@ source /home/pi/robot/install/local_setup.sh
 
 cd /home/pi/robot
 
-killprocess arduino
+killprocess navigation
 
-echo "Start Arduino Controller... "
-ros2 run arduino arduino --ros-args --params-file /home/pi/robot/projects/ArduinoNode/arduino/arduino.yaml 
+ros2 run navigation navigation --ros-args --params-file /home/pi/robot/projects/NavigationNode/navigation/navigation.yaml
 

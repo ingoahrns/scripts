@@ -13,8 +13,7 @@ source /home/pi/robot/install/local_setup.sh
 
 cd /home/pi/robot
 
-killprocess arduino
+killprocess robotcontrol
 
-echo "Start Arduino Controller... "
-ros2 run arduino arduino --ros-args --params-file /home/pi/robot/projects/ArduinoNode/arduino/arduino.yaml 
+ros2 run robotcontrol robotcontrol --ros-args --params-file /home/pi/robot/projects/RobotControlNode/robotcontrol/robotcontrol.yaml 
 
