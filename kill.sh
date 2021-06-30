@@ -17,13 +17,17 @@ slayprocess () {
 # Kill ROS2 Nodes
 killprocess ds4drv
 killprocess arduino		
+killprocess simarduino		
 killprocess raspicam	
+killprocess simcam	
 killprocess joystick	
 killprocess joyctrl	
 killprocess rplidarNode
 killprocess balldetect	
 killprocess robotcontrol	
 killprocess navigation	
+
+killprocess simcam	
 
 
 
