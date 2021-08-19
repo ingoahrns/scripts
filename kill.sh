@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 killprocess () {
     pid=$(ps -C $1 -o pid=)
     if [ "$pid" != "" ]; then
