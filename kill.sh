@@ -28,6 +28,7 @@ killprocess robotcontrol
 killprocess navigation	
 
 killprocess simcam	
+killprocess simlidar	
 
 
 

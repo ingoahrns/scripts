@@ -6,7 +6,7 @@ echo '#################################################################'
 echo ' '
 
 /home/pi/robot/scripts/start_arduino.sh &
-/home/pi/robot/scripts/start_joystick.sh &
+# /home/pi/robot/scripts/start_joystick.sh &
 /home/pi/robot/scripts/start_joyctrl.sh & 
 /home/pi/robot/scripts/start_camera.sh &
 /home/pi/robot/scripts/start_lidar.sh &

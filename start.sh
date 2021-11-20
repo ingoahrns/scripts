@@ -10,7 +10,7 @@ kill.sh
 
 gnome-terminal --working-directory=/home/pi --window-with-profile=ros --hide-menubar --title="Arduino Controller" --geometry=73x28+0+20 -- ~/robot/scripts/start_arduino.sh 
 
-gnome-terminal --working-directory=/home/pi --window-with-profile=ros --hide-menubar --title="Joystick Controller" --geometry=73x28+600+20 -- ~/robot/scripts/start_joystick.sh
+# gnome-terminal --working-directory=/home/pi --window-with-profile=ros --hide-menubar --title="Joystick Controller" --geometry=73x28+600+20 -- ~/robot/scripts/start_joystick.sh
 
 gnome-terminal --working-directory=/home/pi --window-with-profile=ros --hide-menubar --title="Robot Joystick Control" --geometry=73x28+1200+20 -- ~/robot/scripts/start_joyctrl.sh 
 
