@@ -15,5 +15,5 @@ cd /home/pi/robot
 
 killprocess robotcontrol
 
-ros2 run robotcontrol robotcontrol --ros-args --params-file /home/pi/robot/projects/RobotControlNode/robotcontrol/robotcontrol.yaml 
+ros2 run robotcontrol robotcontrol --ros-args --params-file /home/pi/robot/projects/RobotControlNode/robotcontrol/robotcontrol.yaml
 

@@ -21,11 +21,14 @@ killprocess simarduino
 killprocess raspicam	
 killprocess simcam	
 killprocess joystick	
+killprocess pyjoy	
 killprocess joyctrl	
 killprocess rplidarNode
 killprocess balldetect	
 killprocess robotcontrol	
+killprocess pyrobctrl	
 killprocess navigation	
+killprocess pynav	
 
 killprocess simcam	
 killprocess simlidar	
