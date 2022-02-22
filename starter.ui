@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>VisualServoingStarterDialog</class>
- <widget class="QDialog" name="VisualServoingStarterDialog">
+ <class>RobotStarterDialog</class>
+ <widget class="QDialog" name="RobotStarterDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
